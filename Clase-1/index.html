@@ -65,9 +65,44 @@
         <p>&copy; DERECHOS RESERVADOS FOOTER ETC  </p>
     </footer>
 
-    <form action="">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre">
+    <form action="" method="">
+        <div><label for="nombre">Nombre</label>
+        <input type="text" name="nombre"></div><br>
+
+        <div><label for="pass">Constraseña</label>
+        <input type="text" name="pass"></div><br>
+
+        <div><label for="check">Seleccione (ESta es una CHECKBOX)</label>
+        <input type="checkbox" name="opcion"></div><br> <!---br es mala practica btw-->
+
+        <div><label for="radio">Seleccione opcion (ESta es un radio (escojer solo una opcion))</label>
+        <input type="radio" name="opciones"></div>
+
+        <h4>escojer colorcitos (type="color")</h4><input type="color">
+
+
+        <input type="date">
+        <h3>verificar correo bien (type="email")</h3>
+        <input type="email">
+        <br>
+        <h3>archivos</h3>
+        <input type="file">
+
+        <h3>solo numeros</h3>
+        <input type="number">
+
+        <div>
+            <label for="range">poner rangos</label>
+            <input type="range" min="10.000" max="20.000">
+        </div>
+
+        <label for="hora">hora</label>
+        <input type="time">
     </form>
+
+    <h2>para videos (etiquetas multimedia): video y audio</h2>
+    <video src=""></video>
+    <audio src=""></audio>
+
 </body>
 </html>
