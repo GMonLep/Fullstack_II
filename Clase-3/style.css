@@ -1,0 +1,15 @@
+
+:root{
+    ---color_principal: cyan;
+}
+
+body{
+    text-align: center;
+    background-color: var(---color_principal);
+}
+
+p{
+    text-align: center;
+    background-color: blue;
+}
+

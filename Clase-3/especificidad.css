@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+h1{
+
+}
+
+table, th, td {
+    align-self: center;
+    border: 1px solid blue;
+    background-color: rgb(188, 255, 255);
+    margin: auto;
+}
+
+th{
+    color: rgb(62, 62, 148);
+}
+
+td{
+    color: rgb(106, 106, 255);
+}
