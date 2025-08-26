@@ -1,0 +1,32 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(247, 219, 224);
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color:rgb(41, 6, 11);
+    margin-bottom: 30px;
+}
+
+.grid-tarjetas{
+    display:grid;
+    /*cada tarjetita tenga el mismo tamaño(automatico)*/
+    /*1fr: una fraccion de tamaño*/
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    max-width:1000px;
+    margin: 0px auto;
+}
+
+.tarjeta{
+    background-color: rgb(166, 215, 255);
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    /*rgba pa la sombrita osi osi*/
+    box-shadow: 0 0 10px rgb(1, 60, 255);
+}
