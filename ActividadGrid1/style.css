@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.contenido{
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display:grid;
+    grid-template-areas: 
+    "encabezado encabezado"
+    "menucito seccionTarjeta"
+    "sociales sociales";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #e9ecef;
+}
+
+.encabezado img {
+    height: 9rem;
+}
+
+.encabezado{
+    grid-area: encabezado;
+    text-align: center;
+}
+
+.subtitulo2{
+    text-align: center;
+}
+
+.olLista{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+}
+
+.menucito{
+    grid-area: menucito;
+    background-color: #284b63;
+    color:aliceblue;
+    padding:3rem;
+}
+
+
+.seccionTarjeta{
+    grid-area: seccionTarjeta;
+    padding:5rem;
+}
+
+.tarjetas{
+    margin-bottom: 2rem;
+}
+
+.seccionTarjeta p{
+    text-align: center;
+}
+
+.sociales{
+    grid-area: sociales; 
+    text-align: center;
+    background-color: #284b63;
+    color:aliceblue;
+}
