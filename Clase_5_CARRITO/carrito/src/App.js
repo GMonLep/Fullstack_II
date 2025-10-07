@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, {useState} from 'react';
 
@@ -45,7 +43,7 @@ function App() {
               <div className='card-body'>
                 <h5 className='card-title'>{p.nombre}</h5>
                 <p className='card-text'>{p.precio.toLocaleString()}</p>
-                <button onClick= {()=>agregarAlCarrito} className='btn btn-primary'>Agregar al carrito</button>
+                <button onClick= {()=>agregarAlCarrito(p)} className='btn btn-primary'>Agregar al carrito</button>
               </div>
 
             </div>
@@ -75,10 +73,22 @@ function App() {
 
       {/**FIN SECCION CARRITO */}
 
+      {/**A. Agrega un nuevo campo llamado cantidad al momento de añadir un producto al carrito. Si el producto ya está en el carrito, incrementa su cantidad en +1. 
+       Si no existe, agrégalo con cantidad = 1.
+        
+       B. Muestra la cantidad junto al nombre del producto en la lista del carrito. Ejemplo: Zelda Tears of the Kingdom x2
+      
+       C. Modifica el cálculo del total para que multiplique precio * cantidad .
+       */}
+
+
       {/**INICIO MOSTRAR TOTAL */}
       <div className='alert alert-info'>
-        Total: 
+        Total:  <strong>${total.toLocaleString()}</strong>
       </div> 
+      {/**FIN MOSTRAR TOTAL */}
+
+      
     </div>
   );
 }
